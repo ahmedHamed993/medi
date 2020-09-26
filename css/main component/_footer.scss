@@ -1,0 +1,160 @@
+@import "main component/_variable";
+
+.footer
+{
+    background: #152538 !important;
+    color:white;
+    padding-top:50px;    
+
+    .container 
+    {
+        .medi-desc,
+        .footer-depart,
+        .footer-watch
+        {
+            float:left;
+            width:calc(96%/3);
+            background-color:none;
+            @media only screen and (max-width:414px)
+            {
+                width:calc(96%/1);
+                padding:1%;
+                margin-bottom:33px;
+                margin-right:0;
+            }
+        }
+        .medi-desc,
+        .footer-depart
+        {
+            margin-right:2%;
+        }
+        // start medi desc
+        .medi-desc 
+        {
+            .medi-desc-logo
+            {
+                img 
+                {
+                    display:inline-block;
+                    padding-top:0;
+                    margin-top:-13px;
+                    width:50px;
+                    height:50px;
+                    background-color:white;
+                    border-radius:50%;
+                }
+                h1 
+                {
+                    display:inline-block;
+                    padding-top:0;
+                    margin-top:0;
+                    line-height:50px;
+                }
+            }
+            p 
+            {
+                color:$footerPrag;
+            }
+            .medi-desc-icons
+            {
+                .medi-desc-icon
+                {
+                    margin: 0 10px;
+                    cursor:pointer;
+                    transition:1s;
+                    &:hover 
+                    {
+                        color:$blueColor;
+                    }
+                }
+            }
+            
+        }
+        //end medi desc
+        /*===========================================================*/
+        //start footer department
+        .footer-depart
+        {
+            h4 
+            {
+                padding-left:36px;
+            }
+            .footer-small-row 
+            {
+                height:2px;
+                width:40px;
+                background-color:white;
+                margin-left:36px;
+                margin-bottom:15px;
+            }
+            ul 
+            {
+                li 
+                {
+                    a 
+                    {
+                        color:$footerPrag;   
+                        text-decoration: none;
+                        transition: 1s;
+                        display: inline-block;
+                        width: 31%;
+                        margin-bottom: 15px; 
+                        &:first-of-type
+                        {
+                            margin-right:110px;
+                            margin-right:56px;
+
+                        }
+                        &:hover 
+                        {
+                            color:white;
+                            font-weight:bold;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        //end footer department
+        /*===================================================================*/
+        //start footer watch
+        .footer-watch 
+        {
+            h4 
+            {
+                padding-left:36px
+            }
+            .footer-small-row 
+            {
+                height:2px;
+                width:40px;
+                background-color:white;
+                margin-left:36px;
+                margin-bottom:15px;
+            }
+            ul 
+            {
+                li 
+                {
+                    span 
+                    {
+                        color:white;
+                        display:inline-block;
+                        width:49%;
+                        margin-bottom:15px;
+                        @media only screen and (max-width:768px)
+                        {
+                            width:48%;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        //end footer watch
+    }
+    
+}

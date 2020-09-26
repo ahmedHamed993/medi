@@ -1,0 +1,821 @@
+@import "main component/_variable";
+@import "main component/_classes.scss";
+@import "main component/_navbar";
+@import "main component/_buttons";
+@import "main component/_fonts";
+@import "main component/_classes.scss";
+@import "main component/_footer";
+.fixed
+{
+    position: FIXED;
+    transition:all 1s ease-in-out;
+    z-index: 999999999;
+}
+//global
+li
+{
+    list-style-type: none;
+}
+h1
+{
+    font-family:roboto;
+}
+i
+{
+    font-family:font awesome 5 !important;
+}
+
+/////////////////////////////
+*
+{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+body
+{
+   
+}
+/*start header*/
+.header
+{
+    background-image:url("../images/head.jpg");
+    background-size:cover;
+    height:600px;
+    position:relative;
+    .overlay
+    {
+        background-color:$blueColor;
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:0;
+        left:0;
+        opacity:.5;
+        .header-cont
+        {
+            margin-top:200px;
+            @media only screen and (max-width:360px)
+            {
+                margin-top:120px;
+            }
+            h5
+            {
+                color:white;
+                font-size:30px;
+                font-family: lobster;
+            }
+            h1
+            {
+                color:white;
+                font-size:60px;
+                font-family:roboto;
+            }
+        }
+
+    }
+
+}
+/*end header*/
+/*---------------------------------------------------------------------------------------------------*/
+//start welcomr to modern
+.welcome-to
+{
+    margin-top:150px;
+    .welcome-img
+    {
+        margin-bottom:25px;
+        
+        img
+        {
+            width:500px;
+            max-height:800px;
+            box-shadow:-15px 15px $shadowBlue;
+            @media only screen and (max-width:768px)
+            {
+                width:100%;
+            }
+            @media only screen and (max-width:414px)
+            {
+                width:360px;
+                margin-left:17px;
+            }
+            @media only screen and (max-width:375px)
+            {
+                width:330px;
+                margin-left:12px;
+            }
+            @media only screen and (max-width:360px)
+            {
+                width:300px;
+                margin-left:20px;
+            }
+        }
+    }
+    .welcome-cont
+    {
+        padding-top:125px;
+        @media only screen and (max-width:768px)
+        {
+           padding:0;
+        }
+        @media only screen and (max-width:414px)
+        {
+            margin-top:20px;
+            margin-left:17px;
+            padding:10px 20px;
+        }
+        h4
+        {
+            font-family:lobster;
+        }
+        h1
+        {
+            font-family:roboto;
+            font-weight:bold;
+            font-size:50px;
+        }
+        p
+        {
+            color : $pragColor;
+        }
+        ul 
+        {
+            padding:0px;
+            margin-left:0;
+            li 
+            {
+                margin-bottom:10px;
+                .welcome-cont-icon
+                {
+                    margin-right:10px;
+                    font-size:20px;
+                    color:$blueColor;
+                }
+            }
+        }
+    }
+}
+//end welcome to modern
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+//start department
+.depart
+{
+    margin-top: 80px;
+    padding:30px 0;
+    background-color:$lightGray;
+    .container
+    {
+        h1 
+        {
+            font:
+            {
+                size:45px;
+                weight:bold;
+                family:roboto !important;
+            }
+           
+        }
+        .depart-text-btn
+        {
+            p 
+            {
+                width:80%;
+                display:inline-block;
+                padding-right:40px;
+                color:$pragColor;
+                @media only screen and (max-width:768px)
+                {
+                    float:left;
+                }
+                @media only screen and (max-width:414px)
+                {
+                    width:100%;
+                }
+
+            }
+            .blue-btn
+            {
+                width:19%;
+                @media only screen and (max-width:414px)
+                {
+                    width:100%;
+                }
+            }
+            
+        }
+        .depart-icons
+        {
+            margin-top:50px;
+            margin-bottom:50px;
+
+            .depart-icon
+            {
+                display:inline-block;
+                width:(96%/6);
+                background:white;
+                border:1px solid $blueColor;
+                padding:40px 10px;
+                text-align:center;
+                color:$blueColor;
+                transition:all .7s ease-in;
+                cursor: pointer;
+                overflow:hidden;
+                max-height:150px;
+                @media only screen and (max-width:768px)
+                {
+                    width:(96%/3);
+                    margin-bottom:10px;
+                }
+                @media only screen and (max-width:414px)
+               {
+                   height:170px;
+                   overflow: hidden;
+               }
+                &:hover
+                {
+                    background-color:$blueColor;
+                    color:white;
+                }
+                h5 
+                {
+                    @media only screen and (max-width:768px)
+                    {
+                        font-size:16px;
+                    }
+                    @media only screen and (max-width:375px)
+                    {
+                        font-size:14px;
+                    }
+                }
+                .depart-icon-icon
+                {
+                    font-size:40px;
+                    margin-bottom:15px;
+                }
+
+            }
+        }
+        .depart-img-txt
+        {
+            @media only screen and (max-width:768px)
+            {
+                margin-top:360px;
+            }
+          
+                img
+                {
+                    width:40%;
+                    height:600px;
+                    margin-top:-330px;
+                    @media only screen and (max-width:768px) 
+                    {
+                        width:52%;
+                    }
+                    @media only screen and (max-width:768px)
+                    {
+                        width:100%;
+                    }
+                  
+                }
+            
+           
+            .depart-img-text-info
+            {
+                width:59%;
+                display: inline-block;
+                padding:20px 80px;
+                padding-top: 160px;
+                @media only screen and (max-width:768px) 
+                {
+                    width:47%;
+                    padding:20px 24px;
+                }
+                @media only screen and (max-width:768px)
+                {
+                    width:100%;
+                    padding:0;
+                }
+                h2
+                {
+                    color:$darkGray;
+                    font-family:roboto;
+                    margin-top:50px;
+                }
+                p 
+                {
+                    margin-top:40px;
+                    color:$pragColor;
+                    margin-bottom:40px;
+                }
+
+            }
+        }
+
+    }
+}
+
+
+
+
+//end department
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+// start our doctors
+.doctors
+{
+    margin-top:150px;
+    margin-bottom:100px;
+    .container
+    {
+        .doctors-desc
+        {
+            h1 
+            {
+                text-align :center;
+                font-weight:bold;
+                font-size:40px;
+            }
+            p 
+            {
+                color:$pragColor;
+                text-align:center;
+                padding: 0 250px;
+                @media only screen and (max-width:768px)
+                {
+                    padding:0 105px;
+                }
+                @media only screen and (max-width:414px)
+                {
+                    padding:0 15px;
+                    margin-top:-15px;
+
+                }
+            }
+        }
+        .row
+        {
+           .doctors-card
+           {
+               width:(98% / 3);
+               position:relative;
+               //display:inline-block;
+                float:$float-left;
+                @media only screen and (max-width:414px)
+                {
+                    width:(96%/1);
+                    margin:1%;
+                    margin-left:2% !important;
+                    margin-bottom:2% !important;
+                    
+                }
+                
+              
+              
+               img
+               {
+                   max-width:100% ;
+                   max-height:100%;
+               }
+               .overlay
+               {
+                   position: absolute;
+                   top:0;
+                   left:0;
+                   width:100%;
+                   height:100%;
+                   background-color:$blueColor;
+                   opacity:0;
+                  // display:none;
+                   transition:all 1s ease-in-out;
+                   cursor:pointer;  
+                   .doctor-overlay-icons
+                   {
+                       position: absolute;
+                       top: 44%;
+                       left: 35%;
+                       opacity:1;
+                       h1 
+                       {
+                            color:white;
+                            font-weight:bold;
+                       }
+                       .doctor-overlay-icon 
+                       {
+                           display:inline-block;
+                           font-size:25px;
+                           margin-right:15px;
+                           opacity: 1;
+                           color: white;
+                           cursor: pointer;
+                           transition: all 1s linear;
+                           
+                           &:hover
+                           {
+                               color:rgb(19, 0, 87);
+                           }
+                           &:first-of-type
+                           {
+                               margin-left:10px;
+                           }
+                          
+
+                       }
+                   }
+               }
+               &:hover .overlay
+               {
+                   //display:block;
+                   opacity:.7;
+               }
+               &:not(:last-of-type)
+               {
+                   margin-right:1%;
+                @media only screen and (max-width:414px)
+                {
+                    margin:0;
+                }
+
+               }
+           }
+                    
+               
+        }
+    }
+}
+
+//end our doctors
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+//start book an appoitment
+.book
+{
+    background-image:url("../images/apoint.jpg");
+    position:relative;
+    max-width:100%;
+    margin-top:175px;
+    padding:50px;
+    background-size: cover;
+    @media only screen and (max-width:414px)
+    {
+        padding-left:0;
+    }
+    .container
+    {
+        .form
+        {
+            background-color:white;
+            margin:15px;
+            padding:15px;
+            width:50%;
+            margin-left:auto;
+            @media only screen and (max-width:768px)
+            {
+                width:93%;
+            }
+            @media only screen and (max-width:414px)
+            {
+                width:116%;
+            }
+            
+            h4 
+            {
+                font-size:25px;
+                margin-bottom:0;
+            }
+            h1 
+            {
+                font-weight:bold;
+                margin-top:0;
+                padding-top:0;
+            }
+            select 
+            {
+                width:100%;
+                margin-bottom:15px;
+                padding:10px;
+                @media only screen and (max-width:768px)
+                {
+                    width:99%;
+                }
+
+            }
+            .selectricWrapper
+            {
+                width:100%;
+                .selectric
+            {
+                width:174%;
+                max-width:100%;
+                @media only screen and (max-width:414px)
+                {
+                    width:119%;
+                }
+                @media only screen and (max-width:360px)
+                {
+                    width:99%;
+                }
+            }
+            }
+            
+            input 
+            {
+                width:49% !important;
+                margin-bottom:15px;
+                padding:10px;
+                @media only screen and (max-width:1166px)
+                {
+                    width:100% !important;
+                }
+                @media only screen and (max-width:414px)
+                {
+                    width:99% !important;
+                }
+                &:first-of-type
+                {
+                    width:78%; 
+                    @media only screen and (max-width:414px)
+                    {
+                        width:99%;
+
+                    }
+                }
+                &:nth-of-type(2)
+                {
+                    width:20%;
+                    @media only screen and (max-width:414px)
+                    {
+                        width:99%;
+                    }
+                }
+                
+            }
+            .date-div
+            {
+                position:relative;
+                display:inline;
+                .date-div-icon
+                {
+                    position: absolute;
+                    left: -292px;
+                    top: 56px;
+                    font-size: 22px;
+                    color:$pragColor;
+                    pointer-events: none;
+                    @media only screen and (max-width:1166px) {
+                        display:none;
+                    }
+                    @media only screen and (max-width:768px)
+                    {
+                        left:-307px;
+                    }
+                    @media only screen and (max-width:414px)
+                    {
+                        left:-30px ;
+                    }
+                   
+                }
+               
+            }
+            .time-div
+            {
+                position:relative;
+                display:inline;
+                
+                
+                .time-div-icon
+                {
+                    position: absolute;
+                    left: 225px;
+                    top: 0;
+                    font-size: 22px;
+                    color:$pragColor;
+                    pointer-events: none;
+                    @media only screen and (max-width:1167px)
+                    {
+                        
+                      display:none;
+                    }
+                    @media only screen and (max-width:768px)
+                    {
+                        left:244px;
+                    }
+                    @media only screen and (max-width:414px)
+                    {
+                        left:-30px ;
+                        top:54px;
+                    }
+                }
+                .time
+                {
+                    width:100% !important;
+                    cursor: pointer;
+                    @media only screen and (max-width:414px)
+                    {
+                        width:100% !important ;
+                        min-width:100%;
+                    }
+                }
+                .clock-timepicker
+                {
+                    width:49%;
+                    @media only screen and (max-width:1166px)
+                    {
+                        width:100%;
+                    }
+                    @media only screen and (max-width:375px)
+                    {
+                        width:100%;
+                        min-width:0;
+                    }
+                }
+            }
+        }
+    }
+}
+/*=================================================================================================================*/
+/*start quality health*/
+.quality-health
+{
+    margin:100px 0;
+    .container 
+    {
+        .qh-header 
+        {
+            text-align:center;
+            h1
+            {
+                font-weight:bold;
+            }
+            p 
+            {
+                color:$pragColor;
+            }
+        }
+        .qh-parts 
+        {
+            margin:80px 0;
+            div 
+            {
+                
+                display:inline;
+                float:left;
+                margin:0;
+                padding:0;
+                text-align:center;
+                width:calc(98%/3) !important;
+                border:1px solid $lightGray;
+                border-radius:10px;
+                padding:20px;
+                height:350px;
+                @media only screen and (max-width:414px)
+                {
+                    width:calc(98%/1) !important;
+                    margin-bottom:3%;   
+                }
+                &:not(:last-of-type)
+                {
+                    margin-right:1%;
+                }
+                .qh-parts-icon
+                {
+                    background:linear-gradient(#6E63BF,#9385FF  ,#8477E6);
+                    color:rgb(255, 255, 255);
+                    width:60px;
+                    height:60px;
+                    border-radius:50%;
+                    padding:10px;
+                    
+                }
+                h3 
+                {
+                    font-size:25px;
+                    font-weight:600;
+                    margin-top:10px;
+                }
+                p 
+                {
+                    color:$pragColor;
+                }
+            }
+        }
+    }
+}
+
+
+/*end quality health*/
+/*=================================================================================================================*/
+/*start call*/
+.call
+{
+    margin:100px 0;
+    div 
+    {
+        
+        display:inline;
+        float:$float-left;
+        width:50%;
+        @media only screen and (max-width:414px)
+        {
+            width:100% ;
+        }
+    }
+    .call-main-left
+    {
+        background:url("../images/apoint.jpg");
+        background-size:cover;
+        color:white;
+        padding:80px;
+        padding-right:40px;
+        height:350px;
+        h5 
+        {
+            font-family:lobster;
+        }
+        h1 
+        {
+            font-size:50px;
+            padding-top:0;
+            margin-top:0;
+        }
+        .trans-btn
+        {
+            &:hover 
+            {
+                color:$blueColor;
+            }
+        }
+    }
+    .call-main-right 
+    {
+        background:url("../images/head.jpg");
+        background-size:cover;
+        color:white;
+        padding:135px;
+        padding-right:40px;
+        height:350px;
+        color:$blueColor;
+        @media only screen and (max-width:768px)
+        {
+            padding-left: 55px;
+            padding-top:100px;
+        }
+        .callus-icons 
+        {
+            width:30%;
+            color:$blueColor;
+            .callus-icon 
+            {
+                font-size:110px;
+            }
+           
+        }
+        div:nth-of-type(2) 
+        {
+            margin-top:30px;
+            @media only screen and (max-width:768px)
+            {
+                margin-left:40px;
+            }
+            @media only screen and (max-width:414px)
+            {
+                color:white;
+            }
+            h6 
+            {
+                font-family:lobster;
+            }
+            h3 
+            {
+                width:120%;
+            }
+        }
+    }
+}
+
+
+/*end call*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

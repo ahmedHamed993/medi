@@ -1,0 +1,59 @@
+nav
+{
+    background-color : $blueColor;
+    color:white;
+    opacity:.8;
+    transition:all 1s ease-in-out;
+    width:100%;
+    z-index:5;
+    position: absolute;;
+    a
+    {
+        color:white;
+        font-size:40px !important;
+        font-family:roboto;
+        font-weight:bold;
+        &:hover
+        {
+            color:white;
+        }
+        img
+        {
+            width:70px;
+            height:70px;
+            color:white;
+            margin-right:15px;
+            background-color:white;
+            border-radius:50%;
+        }
+    }
+    .navbar-collapse 
+    {
+        .navbar-nav
+        {
+            float:$float-right ;
+            @media only screen and (max-width:768px)
+            {
+                float:$float-left;
+            }
+            .nav-link
+            {
+                font-size:20px !important;
+                color:white;
+                transition:all 1s linear;
+                &:hover
+                {
+                    color:black;
+                }
+            }
+            .white-btn
+            {
+                @media only screen and(max-width:768px)
+                {
+                    margin-left:-10px;
+
+                }
+            }
+        }
+    }
+}
